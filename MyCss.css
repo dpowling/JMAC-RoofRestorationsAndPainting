@@ -1,0 +1,729 @@
+/*My Css for my website*/
+html, body /*This sets a standard to the entirity of the page it's linked to */
+{
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ font-family: 'Open sans';
+ position: relative; /* Ensures that the body won't have horizontal scroll */
+ overflow-x: hidden; /* -- */
+}
+
+
+
+nav
+{
+  height: 10vh;
+  max-height: 70px;
+  min-height: 50px;
+  width: 100vw;
+  background-color: #3273a8;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  font-weight: 600;
+}
+a{
+  color: white;
+}
+
+.logo{
+padding-left: 15vw;
+text-align: center;
+z-index: 11;
+}
+
+.logo img {
+min-height: 50px;
+max-height: 70px;
+max-width: 90px;
+min-width:65px;
+
+}
+
+.nav-links{
+display: flex;
+list-style: none;
+width: 88vw;
+padding: 0 1vw;
+align-items: center;
+text-transform: uppercase;
+justify-content: flex-end;
+padding-right: 15vw;
+}
+.nav-links li a{
+text-decoration: none;
+margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+color: #61DAFB;
+}
+.nav-links li {
+position: relative;
+}
+.nav-links li a::before {
+content: "";
+display: block;
+height: 3px;
+width: 0%;
+background-color: #61DAFB;
+position: absolute;
+transition: all ease-in-out 250ms;
+margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+width: 80%;
+}
+
+.hamburger div{
+width: 30px;
+height:3px;
+background: #f2f5f7;
+margin: 5px;
+transition: all 0.3s ease;
+}
+.hamburger{
+display: none;
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+transition: all 0.7s ease;
+width:0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px,-6px);
+}
+
+h1
+{
+  color: #3273a8;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 60px;
+  margin: 10px 0 10px 0;
+}
+h5
+{
+  color: #3273a8;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 60px;
+  margin: 10px 0 10px 0;
+}
+
+p
+{
+  font-size: small;
+  font-weight: lighter;
+}
+
+h4
+{
+  color: #3273a8;
+  font-weight: 700;
+}
+
+/* This is used for the big flag at the beginning */
+.headerFlag
+{
+  width: auto;
+  align-content: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  height: 90vh;
+  max-height: 1200px;
+  overflow: auto;
+  background-image: url("img/bndheaderlogo.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+
+.main
+{
+  display: grid;
+  text-align: center;
+  grid-gap: 1em;
+  grid-template-columns:1fr minmax(700px, 1012px) 1fr;
+  padding: 1em;
+  grid-template-areas:
+  "a b c";
+}
+
+
+/* This is inside of the body container to make placement of assets really simple */
+.nestedGrid
+{
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  grid-template-columns:repeat(3, auto);
+  grid-template-rows: repeat(7, auto);
+  grid-area: b; /* Don't forget to place nested grids!! I got stuck because I
+  forgot to place it into the body grid I made. */
+  grid-template-areas:
+  "a a a"
+  "b c d"
+  "e e e"
+  "f f g"
+  "f f h"
+  "i i i"
+  "n n n";
+  justify-items: center;
+}
+.nestedAbout
+{
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em 1em 0 1em;
+  grid-template-columns:repeat(3, auto);
+  grid-template-rows: repeat(7, auto);
+  grid-area: b; /* Don't forget to place nested grids!! I got stuck because I
+  forgot to place it into the body grid I made. */
+  grid-template-areas:
+  "a a a"
+  "e e e"
+  "f g g"
+  "t t t"
+  "i i i"
+  "j j j";
+  justify-items: center;
+}
+.aboutContainer
+{
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+}
+.aboutContainer p
+{
+  font-size:18px;
+}
+
+
+.heading1
+{
+  margin-top:10px;
+  margin-bottom: 20px;
+  grid-area: a;
+}
+.heading2
+{
+  padding: 5px;
+  margin:5px;
+  grid-area: e;
+}
+.heading2 h1
+{
+  font-size: 50px;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.heading2 h5
+{
+  font-size: 50px;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.heading3
+{
+  margin-left: 10px;
+  margin-top:10px;
+  margin-bottom:0;
+  padding-bottom: 0;
+  grid-area: i;
+}
+
+
+/* Cards for just below "Our Services"  */
+.carda
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; /*Animation */
+  height: auto;
+  padding: 0.5em 0.5em 1.2em 0.5em;
+  min-width: 300px;
+  max-width: 300px;
+  grid-area: b;
+  justify-self:end;
+}
+.carda:hover /* mouse over shadow */
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.carda .container
+{
+  padding: 2px 16px;
+}
+/* Cards end */
+.carda img
+{
+  height: 200px;
+}
+.carda p
+{
+  padding: 10px;
+}
+.cardb
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; /*Animation */
+  height: auto;
+  padding: 0.5em 0.5em 1.2em 0.5em;
+  min-width: 300px;
+  max-width: 300px;
+  grid-area: c;
+}
+.cardb:hover /* mouse over shadow */
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardb .container
+{
+  padding: 2px 16px;
+}
+/* Cards end */
+.cardb img
+{
+  height: 200px;
+}
+.cardb p
+{
+  padding: 10px;
+}
+.cardc
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; /*Animation */
+  height: auto;
+  padding: 0.5em 0.5em 1.2em 0.5em;
+  min-width: 300px;
+  max-width: 300px;
+  grid-area: d;
+  justify-self:start;
+}
+.cardc:hover /* mouse over shadow */
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardc .container
+{
+  padding: 2px 16px;
+}
+/* Cards end */
+.cardc img
+{
+  height: 200px;
+}
+.cardc p
+{
+  padding: 10px;
+}
+
+.mfp-content {
+    width:800px;
+    height:auto;
+ }
+.formContainer{
+  grid-area: n;
+  display: flex;
+  text-align: left;
+  width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
+
+}
+form {
+  width:100%;
+  margin: 0 auto;
+  padding: 1em;
+  border:none;
+  border-radius: 1em;
+
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li{
+  margin-top: 1em;
+}
+
+label{
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 0.4em;
+  padding:10px;
+}
+
+input:focus,
+textarea:focus{
+  border-color: #000;
+}
+
+textarea{
+  vertical-align: top;
+  height: 5em;
+  resize: none;
+}
+
+select{
+  border-radius: 0.4em;
+  height:30px;
+  font-size: 16px;
+}
+/* Strips terrible pre-built button styling and gives clean button to work with */
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top:20px;
+    text-decoration: none;
+    background:#25bd5e;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0.4em;
+}
+
+button:hover,
+button:focus {
+    background:#3273a8;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+/* end of button */
+
+footer
+{
+  display: grid;
+  height: 200px;
+  text-align: center;
+  grid-gap: 1em;
+  grid-template-columns:1fr minmax(700px, 1012px) 1fr;
+  padding: 1em;
+  grid-template-areas:
+  "a b c";
+  background: #656465;
+
+}
+footer h4
+{
+  color: #f3f3f3;
+}
+footer li
+{
+  color: #dedddd;
+  padding: 0.3em 0 0.3em 0;
+}
+
+
+.footerContainer
+{
+  display: grid;
+  grid-template-columns:repeat(3, auto);
+  grid-template-areas: "a b c";
+  grid-area:b;
+  grid-gap: 1em;
+  padding:1em;
+  justify-items: center;
+}
+.footerCol1{
+  justify-content: start;
+  grid-area:a;
+}
+.footerCol2{
+  justify-content: start;
+  grid-area:b;
+}
+.footerCol3{
+  justify-content: start;
+  grid-area:c;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.nestedAbout .heading2
+{
+  grid-area: f;
+
+}
+.parallax{
+  height: 300px;
+  width:100%; /*note for self, without this, the wide photo would not go into the grid! */
+  background-image: url("img/rsz_sunrisejervisbay.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: e;
+}
+.bottomFlag{
+  height: 300px;
+  width:100%; /*note for self, without this, the wide photo would not go into the grid! */
+  background-image: url("img/rsz_bndheaderlogo.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: e;
+}
+/*Tablet / Small screen Optimisation */
+@media screen and (max-width: 1079px){
+.carda{
+  min-width: 200px;
+  justify-self:center;
+}
+.cardb{
+  min-width: 200px;
+  justify-self:center;
+}
+.cardc{
+  min-width: 200px;
+  justify-self:center;
+}
+
+.headerFlag{
+  max-height: 500px;
+}
+
+nav{
+  height: 10vh;
+}
+.carda p
+{
+  padding: 5px;
+}
+
+
+}
+/* Small Tablet  & Mobile Optimasation */
+@media all and (max-width: 800px){
+.mfp-content{
+  width: 350px;
+}
+
+img{
+  max-width: 300px;
+}
+.logo{
+  display: block;
+  position: absolute;
+  padding-left: 5vw;
+}
+nav{
+position: fixed;
+z-index: 3;
+}
+.hamburger{
+display:block;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 50%;
+transform: translate(-5%, -50%);
+z-index: 2;
+transition: all 0.7s ease;
+}
+.nav-links{
+position: fixed;
+background: #3273a8;
+height: 100vh;
+width: 100%;
+flex-direction: column;
+clip-path: circle(50px at 90% -20%);
+-webkit-clip-path: circle(50px at 90% -10%);
+transition: all 1s ease-out;
+pointer-events: none;
+font-size: 30px;
+justify-content: space-evenly;
+}
+.nav-links.open{
+clip-path: circle(1000px at 90% -10%);
+-webkit-clip-path: circle(1000px at 90% -10%);
+pointer-events: all;
+}
+.landing{
+flex-direction: column;
+}
+.nav-links li{
+opacity: 0;
+}
+.nav-links li:nth-child(1){
+transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2){
+transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+transition: all 0.5s ease 0.6s;
+}
+li.fade{
+opacity: 1;
+}
+.main
+{
+  display: flex;
+}
+.nestedGrid
+{
+  display: grid;
+  grid-template-columns: minmax(300px, 800px);
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  "g"
+  "h"
+  "i"
+  "n";
+  grid-gap: 2em;
+}
+.nestedAbout{
+  display: grid;
+  grid-template-columns: minmax(300px, 800px);
+  grid-template-areas:
+  "a"
+  "e"
+  "f"
+  "g"
+  "t"
+  "i"
+  "j";
+  grid-gap: 2em;
+  padding-bottom: 1em;
+}
+.nestedAbout h1{
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-top: 10vh;
+}
+.nestedAbout h5{
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-top: 10vh;
+}
+footer{
+  display: flex;
+  height: 600px;
+
+}
+.footerContainer{
+  display: grid;
+  grid-template-columns: minmax(300px, 800px);
+  grid-template-areas:
+  "a"
+  "b"
+  "c";
+  justify-items: center;
+}
+.carda{
+  width: 100%;
+  max-width: 300px;
+}
+.cardb{
+  width: 100%;
+  max-width: 300px;
+}
+.cardc{
+  width: 100%;
+  max-width: 300px;
+}
+.heading2 h1
+{
+  font-size: 38px;
+}
+.heading2 h5
+{
+  font-size: 38px;
+}
+.footerCol2
+{
+  text-align: center;
+}
+.headerFlag
+{
+  margin-top: 6vh;
+  max-height: 200px;
+}
+.parallax{
+  height: 300px;
+  width:100%; /*note for self, without this, the wide photo would not go into the grid! */
+  background-image: url("img/sunriseJervisBay.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: e;
+}
+.nestedAbout .heading2{
+  margin:0;
+  padding:0;
+}
+.nestedAbout .heading2 h5{
+  margin:0;
+  padding:0;
+}
+
+}
+/*Small Mobile Optimasation */
+@media all and (max-width:400px){
+  .headerFlag{
+    margin-top: 10vh;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h5{
+    font-size: 40px;
+  }
+}
+/* End of Mobile Optimasation */
