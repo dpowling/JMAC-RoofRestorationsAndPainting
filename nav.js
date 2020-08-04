@@ -13,3 +13,8 @@ link.classList.toggle("fade");
 //Hamburger Animation
 hamburger.classList.toggle("toggle");
 });
+
+//close Hamburger
+$( '.nav-links li a' ).on("click", function(){
+  $('#hamburger').click();
+});
