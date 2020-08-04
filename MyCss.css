@@ -17,7 +17,7 @@ nav
   max-height: 70px;
   min-height: 50px;
   width: 100vw;
-  background-color: #3273a8;
+  background-color: #f5f5f5;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
@@ -25,7 +25,7 @@ nav
   font-weight: 600;
 }
 a{
-  color: white;
+  color: #62001d;
 }
 
 .logo{
@@ -57,7 +57,7 @@ text-decoration: none;
 margin: 0 0.7vw;
 }
 .nav-links li a:hover {
-color: #61DAFB;
+color: #a2a2a2;
 }
 .nav-links li {
 position: relative;
@@ -67,7 +67,7 @@ content: "";
 display: block;
 height: 3px;
 width: 0%;
-background-color: #61DAFB;
+background-color: #a2a2a2;
 position: absolute;
 transition: all ease-in-out 250ms;
 margin: 0 0 0 10%;
@@ -79,7 +79,7 @@ width: 80%;
 .hamburger div{
 width: 30px;
 height:3px;
-background: #f2f5f7;
+background: #990b0b;
 margin: 5px;
 transition: all 0.3s ease;
 }
@@ -100,7 +100,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 
 h1
 {
-  color: #3273a8;
+  color: #62001d;
   font-weight: 800;
   text-decoration: none;
   font-size: 60px;
@@ -108,7 +108,7 @@ h1
 }
 h5
 {
-  color: #3273a8;
+  color: #62001d;
   font-weight: 800;
   text-decoration: none;
   font-size: 60px;
@@ -123,7 +123,7 @@ p
 
 h4
 {
-  color: #3273a8;
+  color: #62001d;
   font-weight: 700;
 }
 
@@ -139,7 +139,7 @@ h4
   height: 90vh;
   max-height: 1200px;
   overflow: auto;
-  background-image: url("img/bndheaderlogo.jpg");
+  background-image: url("img/heroBanner.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,7 +437,7 @@ footer
   padding: 1em;
   grid-template-areas:
   "a b c";
-  background: #656465;
+  background: #6f3b3b;
 
 }
 footer h4
@@ -506,7 +506,7 @@ footer li
 .bottomFlag{
   height: 300px;
   width:100%; /*note for self, without this, the wide photo would not go into the grid! */
-  background-image: url("img/rsz_bndheaderlogo.jpg");
+  background-image: url("img/heroBanner.jpg");
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
