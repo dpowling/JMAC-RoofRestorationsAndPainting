@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
 
 
-    <script>
+    <!-- <script>
    $(document).ready(function() {
       $('.gallery').magnificPopup({
          type: 'image',
@@ -37,7 +37,7 @@
          // end each line (except the last) with a comma
       });
    });
-</script>
+</script> -->
 
   <Title> JMAC Roof Restoration & Painting - Home </Title>
 </head>
@@ -66,6 +66,8 @@
 <div class="headerFlag">
 </div>
 
+
+
   <div class="main">
 
     <div class="nestedGrid">
@@ -73,31 +75,26 @@
       <div class="heading1">
         <h1>Our Services</h1>
       </div>
+
 <div class="cardGrid">
 
+    <a href="#test-popup" class="open-popup-link">
       <div class="carda">
-
-        <div class="popup" id="popup">
-            <div class="popup-inner">
-              <div class="popup__photo">
-                <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="">
-              </div>
-              <div class="popup__text">
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
-              </div>
-              <a class="popup__close" href="#">X</a>
-            </div>
-          </div>
           <div class="container">
             <h4>Roof Restoration</h4>
               <p>Give your roof a lively restoration,
                 most roof paints have special formulas
                 to last the tough Australian heat</p>
               <img src="img/roofPainting.jpg" alt="Painted Roof" style="width:100%">
-          </div>
 
-      </div>
+          </div>
+        </div>
+        <div id="test-popup" class="white-popup mfp-hide">
+        Popup content
+        </div>
+      </a>
+
+
       <div class="cardb">
           <div class="container">
             <h4>Floor Restoration</h4>
@@ -214,8 +211,15 @@
   </div>
 
 
-<script src="nav.js"></script>
+
 </footer>
+<script src="nav.js"></script>
+<script>
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+</script>
 </body>
 
 </html>
