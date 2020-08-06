@@ -561,6 +561,7 @@ button:active {
 .footerCol2{
   justify-content: start;
   grid-area:b;
+  color:#dedddd;
 }
 .footerCol3{
   justify-content: start;
