@@ -22,9 +22,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
 
 
-    <!-- <script>
+    <script>
    $(document).ready(function() {
-      $('.gallery').magnificPopup({
+      $('.gallery1').magnificPopup({
          type: 'image',
          gallery:{
            enabled:true,
@@ -37,7 +37,55 @@
          // end each line (except the last) with a comma
       });
    });
-</script> -->
+</script>
+<script>
+$(document).ready(function() {
+  $('.gallery2').magnificPopup({
+     type: 'image',
+     gallery:{
+       enabled:true,
+       tPrev: 'Previous (Left arrow key)', // title for left button
+       tNext: 'Next (Right arrow key)', // title for right button
+       tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
+       preload: [0,2],
+     }
+     // other options here
+     // end each line (except the last) with a comma
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.gallery3').magnificPopup({
+     type: 'image',
+     gallery:{
+       enabled:true,
+       tPrev: 'Previous (Left arrow key)', // title for left button
+       tNext: 'Next (Right arrow key)', // title for right button
+       tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
+       preload: [0,2],
+     }
+     // other options here
+     // end each line (except the last) with a comma
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.gallery4').magnificPopup({
+     type: 'image',
+     gallery:{
+       enabled:true,
+       tPrev: 'Previous (Left arrow key)', // title for left button
+       tNext: 'Next (Right arrow key)', // title for right button
+       tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
+       preload: [0,2],
+     }
+     // other options here
+     // end each line (except the last) with a comma
+  });
+});
+</script>
 
   <Title> JMAC Roof Restoration & Painting - Home </Title>
 </head>
@@ -72,50 +120,58 @@
 
     <div class="nestedGrid">
 
-      <div class="heading1">
-        <h1>Our Services</h1>
+      <div style="margin-top:0;"class="heading1">
+        <h1 style="margin-bottom:50px; margin-top:0;">Our Services</h1>
       </div>
 
 <div class="cardGrid">
 
-    <a href="#test-popup" class="open-popup-link">
+    <a style="grid-area:b;" href="img/BeforeRoof1.jpg" class='gallery1'>
       <div class="carda">
           <div class="container">
-            <h4>Roof Restoration</h4>
-              <p>Give your roof a lively restoration,
-                most roof paints have special formulas
-                to last the tough Australian heat</p>
-              <img src="img/roofPainting.jpg" alt="Painted Roof" style="width:100%">
+            <h4>Roof Restorations</h4>
+              <p>Stop dealing with leaks, cracked tiles, rusted metal sheeting, and faded colouring.
+                Restore your roof to new condition with Jmac Roof Restorations. </p>
+
+              <img src="img/roofPainting.jpg" alt="Painted Roof">
 
           </div>
         </div>
-        <div id="test-popup" class="white-popup mfp-hide">
-        Popup content
-        </div>
+        <a style="grid-area:b;" href="img/AfterRoof.jpg" class="gallery1"></a>
+        <a style="grid-area:b;" href="img/roofPainting.jpg" class="gallery1"></a>
       </a>
 
-
+    <a style="grid-area:c;" href="img/BeforeGar.jpg" class='gallery2'>
       <div class="cardb">
           <div class="container">
-            <h4>Floor Restoration</h4>
-              <p>A great way to protect high traffic areas, and provide
-                 a fresh look to area's such as; garages and decking</p>
-              <img src="img/AfterGar.jpg" alt="Painted Floor" style="width:100%">
+            <h4>Interior Painting</h4>
+              <p>Bring life back into your home with a fresh coat of paint.
+                Modernise and style your home with modern colours and vibrant
+                feature walls, Or restore your home to its original glory. </p>
+              <img src="img/AfterGar.jpg" alt="Painted Floor">
           </div>
       </div>
+      <a style="grid-area:c;" href="img/AfterGar.jpg" class="gallery2"></a>
+      <a style="grid-area:c;" href="img/BeforeGar2.jpg" class="gallery2"></a>
+      <a style="grid-area:c;" href="img/AfterGar2.jpg" class="gallery2"></a>
+    </a>
 
       <div class="cardc">
           <div class="container">
-            <h4>Repaint & Decorate</h4>
-              <p>A great way to breathe life to an existing home or a new build. See our work below</p>
-              <img src="img/walls.jpg" alt="Internal Repaint" style="width:100%">
+            <h4>Exterior Painting</h4>
+              <p>All aspects of exterior painting. Freshen up the outside of your
+                home or business while protecting it from the elements. </p>
+              <img src="img/walls.jpg" alt="Internal Repaint">
           </div>
       </div>
+
+
       <div class="carde">
           <div class="container">
-            <h4>Repaint & Decorate</h4>
-              <p>A great way to breathe life to an existing home or a new build. See our work below</p>
-              <img src="img/walls.jpg" alt="Internal Repaint" style="width:100%">
+            <h4>Garage Floors</h4>
+              <p>A great way to protect high traffic areas, and provide a fresh
+                look to area's such as; garages and decking</p>
+              <img src="img/walls.jpg" alt="Internal Repaint">
           </div>
       </div>
     </div>
@@ -147,7 +203,7 @@
           <a style="grid-area:f;" href="img/AfterGar.jpg" class='gallery'></a> -->
 
     <div class="heading3"><a name="contactForm"></a>
-      <h5 style="font-size:50px;">Contact us directly</h5>
+      <h5 style="font-size:50px; margin-top:50px;">Contact us directly</h5>
       <p style="font-weight:600;">Please begin by selecting if your contact is for a quote or an inquiry into our capabilities to suit your requirements. </p>
         <p style="font-size:10px;"> Please allow 48 hours for the team to reply</p>
     </div>
@@ -196,8 +252,9 @@
     <div class="footerCol2">
       <h4>Contact Info</h4>
       <ul>
-        <li>mckd_6@hotmail.com</li>
-        <li>+61 412 088 110</li>
+        <li>jmacpainting@outlook.com</li>
+        <li>Mckinley Drummond - 0403 598 324</li>
+        <li>Jordan Stone - 0451 097 496</li>
       </ul>
     </div>
     <div class="footerCol3">
