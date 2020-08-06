@@ -511,7 +511,7 @@ button:active {
 }
 /* end of button */
 
-footer
+.footer
 {
   display: grid;
   height: 200px;
@@ -524,11 +524,11 @@ footer
   background: #6f3b3b;
 
 }
-footer h4
+.footer h4
 {
   color: #f3f3f3;
 }
-footer li
+.footer li
 {
   color: #dedddd;
   padding: 0.3em 0 0.3em 0;
@@ -571,6 +571,21 @@ footer li
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.footerFooter
+{
+  Width:100vw;
+  height: 50px;
+  grid-area: a b c;
+  background-color:#4d4d4d ;
+  color: #c1c1c1;
+  text-align: center;
+}
+.footerFooter p
+{
+  padding-top:15px;
+  margin: 0 40px 0 0;
 }
 .nestedAbout .heading2
 {
@@ -682,6 +697,10 @@ nav{
 .mfp-content{
   width: 280px;
 }
+.footerFooter p
+{
+  margin: 0;
+}
 
 img{
   max-width: 300px;
@@ -780,7 +799,7 @@ opacity: 1;
   margin-bottom: 0px;
   margin-top: 10vh;
 }
-footer{
+.footer{
   display: flex;
   height: 600px;
 
