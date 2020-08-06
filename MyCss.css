@@ -635,7 +635,6 @@ button:active {
 }
 
 .facebookCon{
-  display: flex;
   width:100%;
   margin-top:70px;
 }
@@ -802,7 +801,6 @@ opacity: 1;
   "b"
   "j"
   "t"
-  "h"
   "i"
   "n";
   grid-gap: 2em;
