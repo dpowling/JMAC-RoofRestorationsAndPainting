@@ -107,6 +107,14 @@ h1
   font-size: 60px;
   margin: 10px 0 10px 0;
 }
+h2
+{
+  color: #62001d;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 60px;
+  margin: 10px 0 10px 0;
+}
 h5
 {
   color: #62001d;
@@ -173,6 +181,7 @@ h4
   grid-template-areas:
   "a a a"
   "q q q"
+  "j t o"
   "i i i"
   "n n n";
   justify-items: center;
@@ -625,6 +634,21 @@ button:active {
   padding-left: 1em;
 }
 
+.facebookCon{
+  width:100%;
+  margin-top:70px;
+}
+.iconCont
+{
+  align-self: center;
+}
+.iconCont img
+{
+  align-self: center;
+  width:200px;
+  height: 200px;
+}
+
 
 /*Tablet / Small screen Optimisation */
 @media screen and (max-width: 1079px){
@@ -696,6 +720,10 @@ nav{
 @media all and (max-width: 900px){
 .mfp-content{
   width: 280px;
+}
+.iconCont
+{
+  display: none;
 }
 .footerFooter p
 {
@@ -771,6 +799,9 @@ opacity: 1;
   grid-template-areas:
   "a"
   "b"
+  "j"
+  "t"
+  "h"
   "i"
   "n";
   grid-gap: 2em;
@@ -906,8 +937,9 @@ opacity: 1;
     max-width: 360px;
     justify-items:center;
   }
-
-
+  .facebookCon{
+    margin-top:10px;
+  }
 
 }
 /*Small Mobile Optimasation */
