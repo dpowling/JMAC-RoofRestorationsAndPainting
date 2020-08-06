@@ -820,7 +820,9 @@ opacity: 1;
 }
 .carda img{
   height:250px;
-  width:220px;
+  width:250px;
+  left:4%;
+  bottom:3%;
 }
 .cardb{
   width: 100%;
@@ -829,7 +831,9 @@ opacity: 1;
 }
 .cardb img{
   height:250px;
-  width:220px;
+  width:250px;
+  left:4%;
+  bottom:3%;
 }
 .cardc{
   width: 100%;
@@ -838,7 +842,9 @@ opacity: 1;
 }
 .cardc img{
   height:250px;
-  width:220px;
+  width:250px;
+  left:4%;
+  bottom:3%;
 }
 .carde{
   width: 100%;
@@ -847,7 +853,9 @@ opacity: 1;
 }
 .carde img{
   height:250px;
-  width:220px;
+  width:250px;
+  left:4%;
+  bottom:3%;
 }
 .heading2 h1
 {
