@@ -283,7 +283,7 @@ h4
 .carda:hover /* mouse over shadow */
 {
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9)
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
@@ -321,7 +321,7 @@ h4
 .cardb:hover /* mouse over shadow */
 {
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9)
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
@@ -359,7 +359,7 @@ h4
 .cardc:hover /* mouse over shadow */
 {
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9)
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
@@ -397,7 +397,7 @@ h4
 .carde:hover /* mouse over shadow */
 {
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9)
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
